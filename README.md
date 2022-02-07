@@ -8,7 +8,7 @@
 
 How this benchmarking pipeline has been built, and how to use it, is detailed in our preprint here.
 
-A minimal example is available here, and the list of requirements there.
+A minimal example is available [here](minimal_example.py), and the list of requirements [there](requirements.txt).
 
 ## How to use the gold standard
 
@@ -30,6 +30,15 @@ goldStandard_with_featuresSeq = pd.read_pickle(
 )
 ```
 
+<p align="center">
+  <img width="323" alt="image" src="https://user-images.githubusercontent.com/22586038/152777593-d1a98260-dc0d-4f37-b56b-449d8d57f768.png">
+</p>
+  
+- UniProtIDs are used for both proteins A and B.
+- `isInteraction` is the ground truth from the [IntAct](https://www.ebi.ac.uk/intact/home) database (1 = interacting proteins, 0 = non-interacting proteins).
+- `trainTest` is the split between training set (`train`), first testing set *T1* (`test1`) and second testing set *T2* (`test2`).
+- Pre-processed features are explained in the manuscript.
+
 Training and evaluation can then be done normally. The code from the preprint is in the [Training](3.%20Training/) section.
 
 ## Licence
@@ -46,5 +55,7 @@ This work is licensed under a
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
 
 ## Credits 
-- The code was written in Python 3.7
-- Many libraries were used, in particular pandas, numpy, scikit-learn and pytorch-lightning.
+- The code was written in Python 3.7.
+- Many libraries were used, in particular [Pandas](https://pandas.pydata.org), [Numpy](https://numpy.org), [scikit-learn](https://scikit-learn.org/stable/) and [PyTorch Lightning](https://www.pytorchlightning.ai) (full list in the code and in the [requirements](requirements.txt) file).
+- Plots were drawn using [Matplotlib](https://matplotlib.org), [Seaborn](https://seaborn.pydata.org) and the [MetBrewer colour palettes](https://github.com/BlakeRMills/MetBrewer).
+- Logs were saved using [Weight & Bias](https://wandb.ai).
