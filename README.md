@@ -6,7 +6,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/purple?icon=github)](https://github.com/Naereen/badges/)
 
-How this benchmarking pipeline has been built, and how to use it, is detailed in our preprint here.
+How this benchmarking pipeline has been built, and how to use it, is detailed in our preprint [here]().
 
 A minimal example is available [here](minimal_example.py), and the list of requirements [there](requirements.txt).
 
@@ -40,6 +40,10 @@ goldStandard_with_featuresSeq = pd.read_pickle(
 - Pre-processed features are explained in the manuscript.
 
 Training and evaluation can then be done normally. The code from the preprint is in the [Training](3.%20Training/) section.
+
+## How to cite this work
+
+> Lannelongue L., Inouye M., **Construction of *in silico* protein-protein interaction networks across different topologies using machine learning**, 2022, BioArxiv
 
 ## Licence
 
