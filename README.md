@@ -6,7 +6,7 @@
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/purple?icon=github)](https://github.com/Naereen/badges/)
 
-How this benchmarking pipeline has been built, and how to use it, is detailed in our preprint [here]().
+How this benchmarking pipeline has been built, and how to use it, is detailed in our preprint [here]() (please cite it if you find this work useful!).
 
 A minimal example is available [here](minimal_example.py), and the list of requirements [there](requirements.txt).
 
